@@ -1,0 +1,32 @@
+header {
+    background-color: red;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: transparent;
+    padding: 0 20px;
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: $header-height;
+        &-logo {
+            color: $first-color;
+            font-size: $h2-font-size;
+            font-weight: $font-semi-bold;
+        }
+        &-list {
+            display: flex;
+            column-gap: 55px;
+        }
+        &-link {
+            color: $white-color;
+            font-weight: $font-medium;
+            transition: all .4s;
+            &:hover {
+                color: $first-color;
+            }
+        }
+    }
+}

@@ -1,0 +1,134 @@
+@media(max-width:850px) {
+    .nav-list li {
+        display: none;
+    }
+
+    .home {
+        &-social {
+            top: 0;
+            bottom: 0;
+            align-content: center;
+            left: -220px;
+        }
+
+        &-social-text {
+            place-self: center;
+            top: 50px;
+        }
+
+        &-social-links {
+            margin-left: 2px;
+        }
+    }
+
+}
+
+@media(min-width:945px) {
+    .favorite-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+@media(min-width:768px) {
+    .home {
+        &-img {
+            width: 320px;
+        }
+
+        &-title {
+            font-size: 256px;
+            top: -64px;
+        }
+
+        &-social {
+            top: 0;
+            bottom: 0;
+            align-content: center;
+            left: -220px;
+        }git
+
+        &-social-links {
+            margin-left: 2px;
+        }
+    }
+
+}
+
+@media (min-width:1150px) {
+    .home {
+        &-img {
+            width: 500px;
+        }
+
+        &-title {
+            font-size: 25rem;
+            top: -8px;
+            column-gap: 16px;
+        }
+
+        &-tooltip {
+            img {
+                width: initial;
+            }
+
+            &-text {
+                transform: translate(82px, -52px);
+                font-size: $normal-font-size;
+            }
+        }
+
+        &-social-text {
+            top: 180px;
+        }
+
+        &-social-links {
+            row-gap: 16px;
+        }
+
+        &-social-link {
+            font-size: 24px;
+        }
+    }
+
+    .about {
+        &-container {
+            grid-template-columns: 400px 500px;
+        }
+
+        img {
+            width: 500px !important;
+        }
+
+        p {
+            text-align: left;
+        }
+    }
+
+    .model {
+        &-img {
+            width: 600px !important;
+        }
+
+        .model-tooltip-1 {
+            left: 200px;
+            top: 160px;
+        }
+
+        .model-tooltip-3 {
+            left: 125px;
+            bottom: 90px;
+        }
+
+        .model-tooltip-4 {
+            left: 60px;
+            bottom: 240px;
+        }
+    }
+
+    .sponsor-container {
+        grid-template-columns: repeat(4, max-content) !important;
+    }
+}
